@@ -1,0 +1,5 @@
+{
+  "name": "Nasryia ",
+  "description": "A project tracking and data entry application allowing users to log project metrics (City, Ring, Work Type, etc.) and sync them to Google Sheets.",
+  "requestFramePermissions": []
+}
