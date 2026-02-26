@@ -89,7 +89,7 @@ const EntryForm: React.FC<EntryFormProps> = ({ onSubmit, sheetData, onSync, onFi
 
   const activityOptions = useMemo(() => {
     if (fdtType === 'feeder') {
-      return ["Feeder HDPE Pipe"];
+      return ["Feeder HDPE Pipe", "HH Installation", "FDT Installation"];
     }
     return ACTIVITY_OPTIONS.filter(opt => opt !== "Feeder HDPE Pipe");
   }, [fdtType]);
