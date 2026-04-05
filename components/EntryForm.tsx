@@ -89,9 +89,10 @@ const EntryForm: React.FC<EntryFormProps> = ({ onSubmit, sheetData, onSync, onFi
 
   const activityOptions = useMemo(() => {
     if (fdtType === 'feeder') {
-      return ["Feeder HDPE Pipe", "HH Installation", "FDT Installation"];
+      return ["Feeder HDPE Pipe", "HH Installation", "FDT Installation", "Excavation"];
     }
-    return ACTIVITY_OPTIONS.filter(opt => opt !== "Feeder HDPE Pipe");
+    // For distribution (FDT), include all options including Feeder HDPE Pipe
+    return ACTIVITY_OPTIONS;
   }, [fdtType]);
 
   // Real-time Lookup Match
