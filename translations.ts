@@ -53,7 +53,8 @@ export const translations = {
       "Distribution HDPE Pipe": "Distribution HDPE Pipe",
       "Feeder HDPE Pipe": "Feeder HDPE Pipe",
       "HH Installation": "HH Installation",
-      "FDT Installation": "FDT Installation"
+      "FDT Installation": "FDT Installation",
+      "Ducts": "Ducts"
     },
     workTypes: {
       "New": "New",
@@ -111,7 +112,8 @@ export const translations = {
       "Distribution HDPE Pipe": "مد أنبوب توزيع",
       "Feeder HDPE Pipe": "مد أنبوب مغذي",
       "HH Installation": "نصب منهولات",
-      "FDT Installation": "نصب كابينات"
+      "FDT Installation": "نصب كابينات",
+      "Ducts": "مد دكتات"
     },
     workTypes: {
       "New": "جديد",
