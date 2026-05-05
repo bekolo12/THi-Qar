@@ -68,7 +68,7 @@ const EntryForm: React.FC<EntryFormProps> = ({ onSubmit, sheetData, onSync, onFi
   const ringOptions = useMemo(() => {
     if (!formData.city) return [];
     if (formData.city === "Al-Nasiriyah") {
-      return ['R1'];
+      return ['R1', 'R2'];
     }
     return [];
   }, [formData.city]);
@@ -81,8 +81,14 @@ const EntryForm: React.FC<EntryFormProps> = ({ onSubmit, sheetData, onSync, onFi
     }
     
     if (formData.city === "Al-Nasiriyah") {
-      // Generate strings "1" through "20"
-      return Array.from({ length: 20 }, (_, i) => (i + 1).toString());
+      if (formData.ring === 'R1') {
+        // Generate strings "1" through "20"
+        return Array.from({ length: 20 }, (_, i) => (i + 1).toString());
+      }
+      if (formData.ring === 'R2') {
+        // Generate strings "21" through "35"
+        return Array.from({ length: 15 }, (_, i) => (i + 21).toString());
+      }
     }
 
     return [];
